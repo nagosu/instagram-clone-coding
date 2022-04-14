@@ -11,6 +11,7 @@ input::-moz-input-placeholder {color:#a78ea7;}
 body {
   margin: 0;
   background-color: #FAFAFA;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -21,6 +22,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
   border-bottom: 1px solid #dbdbdb;
   background-color: #FFFFFF;
   padding: 0 20px;
@@ -31,6 +34,11 @@ ul {
   display: flex;
   flex-basis: 35%;
   align-items: center;
+}
+
+.navbar a img {
+  position: relative;
+  top: 4px;
 }
 
 .navbar .search_bar {
@@ -88,17 +96,17 @@ ul {
   height: 119px;
   padding: 16px 0;
   margin: 16px 0 0;
-  border: 1px solid black;
-}
-
-.story .stories {
-  display: flex;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  background-color: #FFFFFF;
 }
 
 .story .stories li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: -15px;
   width: 56px;
   height: 56px;
 }
@@ -110,11 +118,36 @@ ul {
 }
 
 .story .stories .profile_image {
+  position: relative;
+  top: -66px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  margin-bottom: 5px;
 }
 
 .story .stories li span {
-  font-size: 12px;
+  position: relative;
+  top: -65px;
+  font-size: 11px;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+}
+
+.post .postbox {
+  display: flex;
+  width: 472px;
+  height: 708px;
+  margin-top: 18px;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.post .postbox .post_top .imageAndName img {
+  width: 24px;
+  height: 24px;
 }
