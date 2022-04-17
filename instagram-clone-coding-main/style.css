@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input::-ms-input-placeholder {color:#a78ea7;}
+input::-webkit-input-placeholder {color:#a78ea7;}
+input::-moz-input-placeholder {color:#a78ea7;}
+
+body {
+  margin: 0;
+  background-color: #FAFAFA;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #FFFFFF;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.navbar a {
+  display: flex;
+  flex-basis: 35%;
+  align-items: center;
+}
+
+.navbar a img {
+  position: relative;
+  top: 4px;
+}
+
+.navbar .search_bar {
+  display: flex;
+  flex-basis: 30%;
+  height: 36px;
+  width: 280px;
+  padding: 0 12px;
+  background-color: #efefef;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.navbar .search_bar i.fa-solid {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.navbar .search_bar input {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #efefef;
+}
+
+.navbar .menu_icons {
+  display: flex;
+  flex-basis: 35%;
+  justify-content: flex-end;
+}
+
+.navbar .menu_icons i {
+  font-size: 24px;
+  margin-right: 22px;
+}
+
+.navbar .menu_icons img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.story {
+  display: flex;
+  justify-content: center;
+}
+
+.story .stories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 470px;
+  height: 119px;
+  padding: 16px 8px;
+  margin: 16px 0 0;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.story .stories li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -15px;
+  width: 56px;
+  height: 56px;
+}
+
+.story .stories .instagram_story_gradation {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+}
+
+.story .stories .profile_image {
+  position: relative;
+  top: -66px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.story .stories li span {
+  position: relative;
+  top: -65px;
+  font-size: 11px;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+}
+
+.post .postbox {
+  display: flex;
+  width: 472px;
+  height: 708px;
+  margin-top: 18px;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.post .postbox .post_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 470px;
+  height: 58px;
+}
+
+.post .postbox .post_top .imageAndName img {
+  width: 24px;
+  height: 24px;
+}
